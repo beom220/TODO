@@ -1,6 +1,7 @@
 import React, {ChangeEvent, useCallback} from "react";
 import {useRecoilState, useRecoilValue, useSetRecoilState} from "recoil";
-import {inputState, ITodoTypes, todoState} from "../../recoil/todo";
+import {inputState, ITodoTypes, todoState} from "../../../recoil/beforeTodo";
+
 
 const TodoInput = (): JSX.Element => {
     const [ contents, setContents ] = useRecoilState<string>(inputState);

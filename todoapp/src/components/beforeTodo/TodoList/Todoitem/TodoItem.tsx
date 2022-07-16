@@ -1,6 +1,6 @@
 import React, {useCallback, useState} from "react";
 import {SetterOrUpdater} from "recoil";
-import {ITodoTypes} from "../../../recoil/todo";
+import {ITodoTypes} from "../../../../recoil/beforeTodo";
 import TodoModal from "../../TodoModal/TodoModal";
 
 interface PropTypes {

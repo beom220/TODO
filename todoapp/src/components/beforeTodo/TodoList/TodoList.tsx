@@ -1,7 +1,8 @@
 import React, {useCallback} from "react";
 import {useRecoilState} from "recoil";
-import {todoState, ITodoTypes} from "../../recoil/todo";
+
 import TodoItem from "./Todoitem/TodoItem";
+import {todoState, ITodoTypes} from "../../../recoil/beforeTodo";
 
 const TodoList = (): JSX.Element => {
     const [todos, setTodos] = useRecoilState<ITodoTypes[]>(todoState);
